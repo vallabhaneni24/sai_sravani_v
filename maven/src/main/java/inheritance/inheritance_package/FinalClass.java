@@ -1,5 +1,5 @@
 // File: FinalClass.java
-package com.example.mypackage;
+package inheritance.inheritance_package;
 
 final class FinalClass {
     // Final variable

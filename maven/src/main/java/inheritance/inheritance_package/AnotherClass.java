@@ -1,5 +1,5 @@
 // File: AnotherClass.java
-package com.example.mypackage;
+package inheritance.inheritance_package;
 
 public class AnotherClass {
     public static void main(String[] args) {
@@ -8,4 +8,4 @@ public class AnotherClass {
         System.out.println("Final Variable: " + finalObject.finalVariable);
         finalObject.finalMethod();
     }
-}
+}`

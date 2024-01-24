@@ -1,3 +1,5 @@
+package inheritance;
+
 public class Assign4_1 {
 
     private static int staticVariable = 24;
