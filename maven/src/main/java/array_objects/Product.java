@@ -1,4 +1,4 @@
-package cpmparable_equal;
+package array_objects;
 
 public class Product implements Comparable<Product> {
     private int id;

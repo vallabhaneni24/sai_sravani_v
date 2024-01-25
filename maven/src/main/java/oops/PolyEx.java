@@ -1,3 +1,5 @@
+package oops;
+
 class Shape {
     // Method to calculate area
     public void calculateArea() {
