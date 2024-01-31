@@ -1,3 +1,5 @@
+package additional_test;
+
 public class PalindromeTest {
     public static void main(String[] args) {
         // Test cases
