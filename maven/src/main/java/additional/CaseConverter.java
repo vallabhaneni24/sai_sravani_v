@@ -1,3 +1,5 @@
+package additional;
+
 public class CaseConverter {
     public static String convertCase(String str) {
         StringBuilder result = new StringBuilder();

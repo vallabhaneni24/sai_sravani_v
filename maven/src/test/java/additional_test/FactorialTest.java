@@ -1,9 +1,20 @@
-package additional_test;
+package additional;
+
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
 public class FactorialTest {
-    public static void main(String[] args) {
-        int number = 5; // Change this to any number you want to find the factorial of
-        int result = Factorial.factorial(number);
-        System.out.println("Factorial of " + number + " is: " + result);
+
+    @Test
+    public void testFactorial() {
+        // Test cases
+        int[] testNumbers = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int[] expectedResults = {1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880, 3628800};
+
+        // Test the factorial method
+        for (int i = 0; i < testNumbers.length; i++) {
+            int result = Factorial.factorial(testNumbers[i]);
+            assertEquals("Factorial calculation failed for: " + testNumbers[i], expectedResults[i], result);
+        }
     }
 }

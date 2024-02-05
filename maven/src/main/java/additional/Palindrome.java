@@ -1,11 +1,19 @@
-public class Palindrome {
-    public static boolean isPalindrome(String s) {
-        s = s.replaceAll("[^a-zA-Z0-9]", "").toLowerCase(); // Remove non-alphanumeric characters and convert to lowercase
+package additional;
 
-        for (int i = 0; i < s.length() / 2; i++) {
-            if (s.charAt(i) != s.charAt(s.length() - i - 1)) {
+public class Palindrome {
+    public static boolean isPalindrome(String str) {
+        // Remove non-alphanumeric characters and convert to lowercase
+        String cleanStr = str.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
+
+        // Check if the clean string is a palindrome
+        int left = 0;
+        int right = cleanStr.length() - 1;
+        while (left < right) {
+            if (cleanStr.charAt(left) != cleanStr.charAt(right)) {
                 return false;
             }
+            left++;
+            right--;
         }
         return true;
     }
